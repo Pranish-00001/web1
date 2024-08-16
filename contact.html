@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <h1>CONTACT !!</h1><br><br>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            INFO.
+        </legend>
+        <form action="mailto: uidhailer999@gmail.com" method="post" >  <!--Action le chai kun url ma lagne data bhanera bhancha and method chai aba get/post dekhne nadekhna plus get le query ko terms ma lagcha--> 
+            <p>
+           <label for="mail">Email</label>  <!--for and id must be same to corelate-->
+           <input id = "mail" type="email" placeholder="example@gmail.com" required name="mail" enctype="text/plain"><br><br> <!--readonly le lkhna didaina-->
+           <label for="uname">Name</label>  <!--for and id must be same to corelate-->
+           <input id = "uname" type="text" placeholder="Jack Daniels" required name="uname"><br><br>
+           </p>
+           <p>
+            <h3>Your Gender</h3>
+            <label for="male">Male</label>
+            <input type="radio" value="male" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" value="female" name="gender" id="female">
+           </p>
+           <p>
+            <h3>Interested areas</h3>
+            <label for="Politics">Politics</label>
+            <input type="checkbox" value="politics" name="politics" id="Politics">
+            <label for="sports">Sports</label>
+            <input type="checkbox" value="sports" name="sports" id="sports">
+           </p>
+           <p>
+            <h3>Your nation </h3>
+            <select name="country" id="country">
+                <option value="Nepal">Nepal</option>
+                <optgroup label="UK">
+                    <option value="scot">scotland</option>
+                    <option value="eng">england</option>
+                    <option value="wal">wales</option>
+                </optgroup>
+                <option value="india">India</option>
+            </select>
+           </p>
+           <p>
+             <input type="date" name="date">
+           </p>
+           <p>
+            <button type="submit">Submit</button>
+           <button type="reset">Reset</button>
+           </p>
+        </form>
+    </fieldset>
+</body>
+</html>
